@@ -1,0 +1,66 @@
+﻿<Window x:Class="HotelManagerment.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:HotelManagerment"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <DockPanel>
+        <!-- Thanh menu ngang -->
+        <Border DockPanel.Dock="Top" Background="#9370DB" Padding="10" CornerRadius="8">
+            <StackPanel Orientation="Horizontal" HorizontalAlignment="Center">
+
+                <!-- Add Room -->
+                <Button Width="140" Height="60" Margin="8" Cursor="Hand" Background="#6A5ACD" Click="Room_Click">
+                    <StackPanel Orientation="Vertical" HorizontalAlignment="Center">
+                        <Image Width="24" Height="24" Margin="0,4"/>
+                        <TextBlock Text="Add Room" Foreground="White" FontWeight="Bold" HorizontalAlignment="Center"/>
+                    </StackPanel>
+                </Button>
+
+                <!-- Customer Registration -->
+                <Button Width="160" Height="60" Margin="8" Cursor="Hand" Background="#6A5ACD" Click="Button_Click" >
+                    <StackPanel Orientation="Vertical" HorizontalAlignment="Center">
+                        <Image Width="24" Height="24" Margin="0,4"/>
+                        <TextBlock Text="Customer Registration" Foreground="White" FontWeight="Bold" HorizontalAlignment="Center"/>
+                    </StackPanel>
+                </Button>
+
+                <!-- Booking -->
+                <Button Width="140" Height="60" Margin="8" Cursor="Hand" Background="#6A5ACD" Click="Button_Click_2">
+                    <StackPanel Orientation="Vertical" HorizontalAlignment="Center">
+                        <Image  Width="24" Height="24" Margin="0,4"/>
+                        <TextBlock Text="Check Out" Foreground="White" FontWeight="Bold" HorizontalAlignment="Center"/>
+                    </StackPanel>
+                </Button>
+
+                <!-- Booking Detail -->
+                <Button Width="160" Height="60" Margin="8" Cursor="Hand" Background="#6A5ACD" Click="Button_Click_1" >
+                    <StackPanel Orientation="Vertical" HorizontalAlignment="Center">
+                        <Image  Width="24" Height="24" Margin="0,4"/>
+                        <TextBlock Text="Booking Detail" Foreground="White" FontWeight="Bold" HorizontalAlignment="Center"/>
+                    </StackPanel>
+                </Button>
+
+                <!-- Employee -->
+                <Button Width="140" Height="60" Margin="8" Cursor="Hand" Background="#6A5ACD" Click="Button_Click_3" >
+                    <StackPanel Orientation="Vertical" HorizontalAlignment="Center">
+                        <Image Width="24" Height="24" Margin="0,4"/>
+                        <TextBlock Text="Employee" Foreground="White" FontWeight="Bold" HorizontalAlignment="Center"/>
+                    </StackPanel>
+                </Button>
+            </StackPanel>
+        </Border>
+
+        <!-- Nội dung bên dưới (trống) -->
+        <Grid Width="798">
+            <TextBlock Text="Welcome to Hotel Management System"
+                       Foreground="White"
+                       FontSize="26"
+                       FontWeight="Bold"
+                       HorizontalAlignment="Center"
+                       VerticalAlignment="Center"/>
+        </Grid>
+    </DockPanel>
+</Window>
